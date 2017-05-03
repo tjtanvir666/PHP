@@ -1,0 +1,58 @@
+query
+======
+SELECT b_name FROM branch,owner WHERE branch.b_id=owner.b_id;
+SELECT c_name FROM client,property WHERE property.c_id=2;
+SELECT * FROM client,property WHERE property.c_id=client.c_id;
+
+UPDATE `property` SET `p_id` = 'p_06' WHERE `property`.`p_id` = 'p_01';
+UPDATE `property` SET `c_id` = 'c_01' WHERE `property`.`p_id` = 'p_02';
+DELETE FROM `property` WHERE `property`.`p_id` = 'p_02';
+
+SELECT * FROM branch,owner,client,staff,property WHERE property.b_id=branch.b_id AND property.o_id=owner.o_id AND property.c_id=client.c_id AND property.s_id=staff.s_id;
+
+SELECT * FROM branch,owner,staff,property WHERE property.b_id=branch.b_id AND property.o_id=owner.o_id AND property.c_id='No' AND property.s_id=staff.s_id;
+
+
+//------Rule for query in reational way : with in Select to FROM we will write the tableName.columnName of the record we want to vview, then with in FROM to WHERE we will write the name of the respective tables all that we have mentioned then after WHRE we will write the relations and then refenece the foreign keys that thistbale.colum = anothertable.column for all the queries so that they reference correectly and after each of those equavalance we will write AND to separate them----//
+
+SELECT property.p_id, property.s_id FROM property WHERE property.o_id = 'o_02';
+
+SELECT staff.s_name FROM property,staff WHERE property.o_id = 'o_02' AND property.s_id = staff.s_id;
+
+SELECT staff.s_name, staff.s_id FROM property,staff WHERE property.o_id = 'o_02' AND property.s_id = staff.s_id;
+
+SELECT owner.o_id,property.p_name, branch.b_name FROM property,owner,branch WHERE owner.o_name='Dipu' AND property.o_id = owner.o_id AND property.b_id = branch.b_id;
+
+SELECT owner.o_id,owner.o_name,property.p_name,property.p_id,staff.s_id,staff.s_name, branch.b_name FROM property,owner,branch,staff WHERE owner.o_name='Dipu' AND property.o_id = owner.o_id AND property.b_id = branch.b_id AND property.s_id=staff.s_id
+
+SELECT staff.s_name, staff.s_id, property.p_name, property.p_id, property.b_id, staff.b_id FROM property,branch,staff WHERE staff.s_id='s_03' AND property.b_id = branch.b_id AND staff.b_id=branch.b_id AND property.s_id = staff.s_id;
+
+
+
+(here mentioning the name for both the table is mendatory while we are quaring with foreign key)
+
+
+====================================================================================================
+
+if (!isset($_POST['']) || $_POST[''] === ''){ //form validation
+			 	$ok = false;
+			 	echo "not written"; 
+			 } else{
+			 	$ = $_POST['']; // prefilling the form
+			 }
+
+<div class="form-group">
+	<label for="">--- ID</label>
+		<input name="" type="text" class="form-control" id="" placeholder="" required>
+</div>
+
+
+#check if records exists
+	$stmt = $con->prepare("SELECT b_id from branch where b_id = ?");
+	$stmt -> execute(array("$brId"));
+
+	if($stmt->rowCount() > 0){
+		printf('<br><h3 class="text-center text-primary">Branch Exists</h3>');
+	}
+
+	http://stackoverflow.com/questions/6620019/check-if-sql-row-exists-with-php

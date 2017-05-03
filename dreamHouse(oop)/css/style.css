@@ -1,0 +1,25 @@
+.navigation{
+	margin-bottom: 100px;
+}
+.navbar{
+	padding-left:100px;
+	padding-right: 100px;
+}
+.login-form{
+	background: rgba(255, 255, 255, 0.9);
+}
+button[name="logout"]{
+	display: table;
+	margin: auto;
+	width: 100%;
+}
+.main-body{
+	padding: 30px;
+}
+#go{
+	margin-top: 25px;
+}
+
+.back{
+	background-image: url("../BACK.jpg");
+}

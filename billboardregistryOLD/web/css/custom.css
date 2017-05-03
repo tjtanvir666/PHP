@@ -1,0 +1,117 @@
+
+@font-face {font-family: Roboto-Regular;src: url(../fonts/Roboto-Regular.ttf);}
+@font-face {font-family: Roboto-Bold;src: url(../fonts/Roboto-Bold.ttf);}
+@font-face {font-family: Roboto-Light;src: url(../fonts/Roboto-Light.ttf);}
+@font-face {font-family: Roboto-Medium;src: url(../fonts/Roboto-Medium.ttf);}
+
+
+body {
+    margin-top: 70px;
+}
+
+
+body {background-color: #ebeff2; height: 100%; width: 100%; color: #6f6f6f; font-family: Roboto-Medium;}
+h1,h2,h3,h4,h5,h6 {color: #000;}
+a:link {color: #557ebc; text-decoration: none;}
+a:hover {color: #fff;}
+a:active {color: #dedfe1;}
+a:visited {color: #557ebc;}
+input {border: none; outline: none; padding: 5px;}
+input[type=submit] {background-color: #557ebc; color: #fff;}
+input[type=text],input[type=email],input[type=password] {background-color: #cfdaec;}
+
+
+/*Generic designs start here*/
+.mw_nav {background-color: #0e47a1; border: none; height: 70px; border-radius: 0;}
+.mw_footer {background-color: #dedfe1; height: 70px; padding-top: 20px; color: #606163;}
+.mw_panel { background-color: inherit; border: none; bottom: 0; margin-bottom: 0;}
+.navbar-brand img {margin: -6px 0 0 0;}
+.mw_content,.panel-body {min-height: 750px;}
+.send_right {float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Isaac*/
+/*Define all classes starting with 'i_'*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Jay*/
+/*Define all classes starting with 'j_'*/
+
+
+
+
+
+
+
+
+
+
+
+/*Kogi*/
+/*Define all classes starting with 'k_'*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Sid*/
+
+/*Define all classes starting with 's_'*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tanvir*/
+/*Define all classes starting with 't_'*/
+
+.card{
+	border:solid;
+	margin:10px;
+}
+
+.name{
+	color:red;
+}
+

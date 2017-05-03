@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cat clicker</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- <div style="display: inline; float: left;">
+		<span id="name1"></span><br>
+		<img id="clicker" src="images/cat.jpg"><br>
+        <p >Number of clicks: <span id="para"></span></p>
+		
+			
+		</div> 
+		<div style=" float: left; padding-left: 15px">
+				<span id="name2"></span><br>
+		        <img id="clicker2" src="images/cat.jpg">
+				<p >Number of clicks: <span id="para2"></span></p>
+		 </div> -->
+
+		<ul id="bigCat">
+			<li>Cat-1</li>
+			<li>Cat-2</li>
+			<li>Cat-3</li>
+			<li>Cat-4</li>
+			<li>Cat-5</li>
+		</ul> <br>
+
+		<div id="display"> 
+			<h3 id="name"></h3>
+			<img id="image" src="">
+			
+		</div> <br>
+
+		The clicks: <input type="text" name="counter" id="counter">
+
+		
+	
+
+	
+	<!-- <script type="text/javascript" src="js/site.js"></script> -->
+	<!-- <script type="text/javascript" src="js/closureAndEventListener.js"></script> -->
+	<script type="text/javascript" src="js/5cat.js"></script>
+</body>
+</html>

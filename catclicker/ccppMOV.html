@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CatClickerMOV</title>
+</head>
+<body>
+	<ul id="cat-list"></ul>
+	<div id="content-body">
+		<h3 id="cat-name"></h3>
+		<img id="cat-image" src="" ><br>
+		<p id="counter"></p>
+	</div>
+
+	<div>
+		<button id="admin-btn">Admin</button><br><br>
+		<div id="form-div" style="display:none;">
+			<form>
+				<label>Name: </label> <input type="text" id="name-input" >
+				<label>Image-URL: </label> <input type="text" id="image-url" >
+				<label>Number of clicks: </label> <input type="text" id="click-counter" name="click-counter"><br><br>
+				<input type="button" value="Cancel" id="cancel"> <input type="button" value="Save" id="save">
+			</form>
+		</div>
+				
+	</div>
+
+	<script src="js/myAppAdmin.js"></script>
+</body>
+</html>

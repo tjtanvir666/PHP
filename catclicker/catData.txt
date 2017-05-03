@@ -1,0 +1,27 @@
+  	   [
+  	    {
+	        "name": "cat1",
+	        "image": "images/cat.jpg",
+	        "count": 0
+	    },
+	    {
+	        "name": "cat2",
+	        "image": "images/cat2.jpg",
+	        "count": 0
+	    },
+	    {
+	        "name": "cat3",
+	        "image": "images/cat3.jpg",
+	        "count": 0
+	    },
+	    {
+	        "name": "cat4",
+	        "image": "images/cat4.jpg",
+	        "count": 0
+	    },
+	    {
+	        "name": "cat5",
+	        "image": "images/cat5.jpg",
+	        "count": 0
+	    }
+	     ]

@@ -1,0 +1,21 @@
+
+#bigCat{
+	align-content: center;
+
+}
+
+#display{
+	height: 400px;
+	width: 400px;
+	border:solid;
+}
+
+
+
+
+#bigCat > li{
+	list-style: none;
+	display: inline;
+	float: center;
+	padding-left: 20px;
+}

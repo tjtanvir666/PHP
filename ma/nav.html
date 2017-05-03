@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="container">
+            <div role="navigation" class="navbar navbar-default col-md-12  navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded='false'><span class="glyphicon glyphicon-align-justify"></span> <span>Menu</span>
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <div id="logo">
+                        <a class="navbar-brand" href="http://www.movingwalls.my/"><img src="images/mw-logo.png"></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse col-md-offset-3" id="collapse-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="nav"><a href="index.html">Explore</a> </li>
+                        <li class="nav"><a href="index.html">Dashboard</a> </li>
+                        <li class="dropdown nav">
+                            <a class="navi" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Campaign Plan <span class="caret"></span></a>
+                            <!-- caret gives the arrow down thing -->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown  nav">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transaction <span class="caret"></span></a>
+                            <!-- caret gives the arrow down thing -->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav"><a href="index.html">Contact Us</a> </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-user">  </span> Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="row container" id="body">
+            <h3>Booking History</h3>
+            <br>
+            <form class="form-inline">
+                <div class="form-group ">
+                    <label for="Booking Duration">Booking Duration</label>
+                    <br>
+                    <select id="s1" class="form-control " name=" ">
+                        <option value=" ">All</option>
+                        <option value=" ">Past</option>
+                        <option value=" ">Current</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-offset-1 ">
+                    <label for="Booking Status">Booking Status</label>
+                    <br>
+                    <select id="s2" class="form-control " name=" ">
+                        <option value=" ">All</option>
+                        <option value=" ">Pending For Approval</option>
+                        <option value=" ">Approved</option>
+                        <option value=" ">Not Approved</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-offset-1  ">
+                    <label for="Content Status">Content Status</label>
+                    <br>
+                    <select id="s3" class="form-control " name=" ">
+                        <option value=" ">All</option>
+                        <option value=" ">Pending For Content</option>
+                        <option value=" ">Approved</option>
+                        <option value=" ">Not Approved</option>
+                        <option value=" ">Completed</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <div id="scrollable" class="ag-blue"> <!-- putting ag-grid theme -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.0.3.min.js "></script>
+    <script type="text/javascript" src="js/ag-grid/dist/ag-grid.min.js"></script>
+    <!-- ag-grid js-->
+    <link rel="stylesheet" type="text/css" href="js/ag-grid/dist/styles/ag-grid.css">
+    <!-- ag-grid css -->
+    <link rel="stylesheet" type="text/css" href="js/ag-grid/dist/styles/theme-blue.css">
+    <!-- ag-grid theme -->
+    <script type="text/javascript" src="js/jQuery.fixTableHeader.min.js"></script>
+    <!-- the normal -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <!-- <script type="text/javascript" src="js/site.js"></script>  <!-- normal data calling with ag-grid --> 
+    <script type="text/javascript" src="js/ag-Mov.js"></script>  <!-- calling data from api -->
+
+</body>
+
+</html>

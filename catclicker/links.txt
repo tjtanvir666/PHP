@@ -1,0 +1,15 @@
+1)appending a li to the ul.
+  http://www.w3schools.com/jsref/tryit.asp?   filename=tryjsref_node_appendchild
+
+2)stopping page refresh on button clicking in sde a form: http://stackoverflow.com/questions/7803814/prevent-refresh-of-page-when-button-inside-form-clicked
+
+3) show hide div: 
+http://stackoverflow.com/questions/9456289/how-to-make-a-div-visible-and-invisible-with-javascript
+
+4)array push: http://www.w3schools.com/jsref/jsref_push.asp
+
+5)js JSON obj to php
+http://stackoverflow.com/questions/8599595/send-json-data-from-javascript-to-php
+
+6)js JSON obj to php for psot - The best
+http://stackoverflow.com/questions/18866571/receive-json-post-with-php

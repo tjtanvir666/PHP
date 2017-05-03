@@ -1,0 +1,54 @@
+var catListView = {
+
+        catList: document.getElementById('cat-list'),
+        nameField: document.getElementById('name-input'),
+        urlField: document.getElementById('image-url'),
+        listElements: [],
+        init: function() {
+            var catData = octopus.getCatData();
+
+            for (var i = 0; i < catData.length; i++) {
+
+                //apending the list
+                var node = document.createElement('li');
+                var textNode = document.createTextNode(catData[i].name);
+                node.appendChild(textNode);
+                // this.catList.appendChild(node);
+
+
+                node.addEventListener('click', (function(catDataCopy) {
+                    return function() {
+                        octopus.setCurrentCat(catDataCopy); //we are setting the ith object to the octopus and octopus is setting it to the model, because we cannot have the view talkin to the model. And our main currentCat variable is defiend in the model. 
+                        catListView.nameField.value = catDataCopy.name;
+                        catListView.urlField.value = catDataCopy.image;
+                    };
+
+                })(catData[i]));
+                this.listElements.push(node);  //push is an array function
+            }
+            this.render();
+        },
+
+        render: function() {
+            catListView.catList.innerHTML = " ";
+            var catData = octopus.getCatData();
+            for (var i = 0; i < catData.length; i++) {
+
+                //apending the list
+                // var node = document.createElement('li');
+                // var textNode = document.createTextNode(catData[i].name);
+                // node.appendChild(textNode);
+                var node = this.listElements[i];
+                this.catList.appendChild(node);
+
+                // node.addEventListener('click', (function(catDataCopy) {
+                //     return function() {
+                //         octopus.setCurrentCat(catDataCopy); //we are setting the ith object to the octopus and octopus is setting it to the model, because we cannot have the view talkin to the model. And our main currentCat variable is defiend in the model. 
+                //         catListView.nameField.value = catDataCopy.name;
+                //         catListView.urlField.value = catDataCopy.image;
+                //     };
+
+                // })(catData[i]));
+            }
+        }
+    };
